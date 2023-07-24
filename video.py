@@ -12,9 +12,6 @@ st.title('🦜️🔗 Video Summarizer :red[Toolbox]')
 import os
 api_key = st.text_input("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")
 
-if api_key:
-    os.environ["OPENAI_API_KEY"] = api_key
-
     llm = OpenAI(temperature=0) #Temp controls the randomness of the text
 
     prompt = st.text_input("Paste the URL")
